@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGANTOGRAFIA "EL ANGEL"</title>
+    <link rel="stylesheet" href="../css/RegistroV.css">
+    <link rel="stylesheet" href="../css/General.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <!-- Header debe ir antes del main -->
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <!--TITULO-->
+                <div class="container-logo">
+                    <h1 class="logo">
+                        <a href="RegistroV.html">GIGANTOGRAFIA "EL ANGEL"</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Barra de pagina-->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="RegistroV.html">Registro de venta</a></li>
+                    <li><a href="CotejoA.html">Lista de Cotejo</a></li>
+                    <li><a href="CrearUser.html">Agregar Usuario</a></li>
+                    <li><a href="gestion.html">Gestionar Usuario</a></li>
+                    <li><a href="RegistroV.html">Historial de Venta</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="espacio"></div>
+    </header>
+
+    <!-- Main debe ir después del header -->
+    <main>
+        <div class="container-input">
+            <div class="container-group">
+                <h2>Nombre o Razón Social</h2>
+                <input type="text" id="Nombre">
+            </div>
+            <div class="container-group">
+                <h2>RUC o DNI</h2>
+                <input type="text" id="DNI">
+            </div>
+            <div class="container-group">
+                <h2>Producto</h2>
+                <input type="text" id="Producto">
+            </div>
+            <div class="container-group">
+                <h2>Descripción</h2>
+                <input type="text" id="Descripcion">
+            </div>
+            <div class="container-group">
+                <h2>Categoría</h2>
+                <select id="Categoria">
+                    <option value="BANNER">BANNER</option>
+                    <option value="VINIL">VINIL</option>
+                    <option value="TARJETA">TARJETA</option>
+                    <option value="LETRERO">LETRERO</option>
+                    <option value="LONA">LONA</option>
+                    <option value="OTROS">OTROS</option>
+                </select>
+            </div>
+            <div class="container-group">
+                <h2>Cantidad</h2>
+                <input type="number" id="Cantidad">
+            </div>
+            <div class="container-group">
+                <h2>Precio por Unidad</h2>
+                <input type="number" id="PrecioXUnidad">
+            </div>
+        </div>
+        <div class="container-vent">
+            <input type="button" value="Agregar" id="btnAgregar">
+        </div>
+        <div class="espacio"></div>
+        <div class="tabla-container">
+            <table id="tblVenta" class="tblVent">
+                <thead>
+                    <tr>
+                        <th>CLIENTE</th>
+                        <th>RUC O DNI</th>
+                        <th>PRODUCTO</th>
+                        <th>DESCRIPCIÓN</th>
+                        <th>CATEGORIA</th>
+                        <th>CANTIDAD</th>
+                        <th>PRECIO</th>
+                        <th>TOTAL</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán los registros dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div class="container-vent">
+        <label>TOTAL A PAGAR: S/.</label>
+        <label id="totalPagar">0</label>
+        <input type="button" value="REALIZAR VENTA" id="btnRealizarVenta">
+    </div>
+    <script src="https://kit.fontawesome.com/25966f1c30.js" crossorigin="anonymous"></script>
+    <script src="../js/RegistroV.js"></script>
+</body>
+</html>

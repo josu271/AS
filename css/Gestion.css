@@ -1,0 +1,109 @@
+.search-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el input y el botón */
+    justify-content: flex-start; /* Alinea el contenido hacia la izquierda */
+    margin-bottom: 2rem; /* Espacio debajo del contenedor */
+    padding-left: 2rem; /* Ajusta el espacio a la izquierda si es necesario */
+}
+#buscar {
+    padding: 0.8rem 1.2rem;
+    width: 20rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+}
+
+#buscar:focus {
+    border-color: var(--dark-color);
+}
+
+label[for="buscar"] {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    color: var(--dark-color);
+}
+
+#btnBuscar {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnBuscar:hover {
+    background-color: #6d28d9;
+}
+
+#btnBuscar:active {
+    background-color: #4b1e9f;
+}
+
+/* Ajustar la posición del contenido principal para evitar estar oculto por el header */
+.main-content {
+    margin-top: 12rem; /* Ajusta esta altura según el tamaño de tu header */
+    padding: 2rem;
+    text-align: center;
+}
+
+table {
+    margin-top: 2rem;
+}
+.tabla-container {
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    padding: 2px; /* Agregar espacio alrededor */
+    max-width: 100%; /* Limitar el ancho máximo de la tabla */
+}
+
+.tblVent {
+    width: 90%; /* Ajusta el ancho para que no ocupe todo el espacio */
+    margin: 20px auto; /* Añade márgenes superior e inferior, y centra horizontalmente */
+    border-collapse: collapse;
+}
+
+.tblVent th, .tblVent td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px; /* Aumentar tamaño de fuente */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para el encabezado */
+.tblVent thead {
+    background-color: #f4e42d;
+    color: #333;
+}
+
+/* Estilo para las celdas de operaciones */
+.tblVent .operaciones-btn {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tblVent .operaciones-btn button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.tblVent .operaciones-btn button:hover {
+    background-color: #ddd;
+}
+
+/* Footer de la tabla */
+.tblVent tfoot {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}

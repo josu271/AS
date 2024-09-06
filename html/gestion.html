@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGANTOGRAFIA "EL ANGEL"</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.0/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.0/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="../css/Gestion.css">
+    <link rel="stylesheet" href="../css/General.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <!--TITULO-->
+                <div class="container-logo">
+                    <h1 class="logo">
+                        <a href="RegistroV.html">GIGANTOGRAFIA "EL ANGEL"</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Barra de pagina-->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="RegistroV.html">Registro de venta</a></li>
+                    <li><a href="CotejoA.html">Lista de Cotejo</a></li>
+                    <li><a href="CrearUser.html">Agregar Usuario</a></li>
+                    <li><a href="gestion.html">Gestionar Usuario</a></li>
+                    <li><a href="gestion.html">Historial de Venta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenedor principal ajustado -->
+    <main class="main-content">
+        <!-- Caja de texto para búsqueda -->
+        <div class="search-container">
+            <label for="buscar">Ingrese Nombre: </label>
+            <input type="text" id="buscar" placeholder="Ingresa Nombre">
+            <button id="btnBuscar">Buscar</button>
+        </div>
+
+        <!-- Tabla con DataTables -->
+        <table id="miTabla" class="tblVent">
+            <thead>
+                <tr>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Contraseña</th>
+                    <th>Celular</th>
+                    <th>Usuario</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12345678</td>
+                    <td>Juan Pérez</td>
+                    <td>miPassword123</td>
+                    <td>987654321</td>
+                    <td>jperez</td>
+                    <td class="operaciones-btn">
+                        <button class="btnEditar">Editar</button>
+                        <button class="btnEliminar">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>87654321</td>
+                    <td>Maria Gómez</td>
+                    <td>passMaria321</td>
+                    <td>912345678</td>
+                    <td>mgomez</td>
+                    <td class="operaciones-btn">
+                        <button class="btnEditar">Editar</button>
+                        <button class="btnEliminar">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="../js/GESTION.JS">
+    </script>
+</body>
+</html>

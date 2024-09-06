@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGANTOGRAFIA "EL ANGEL"</title>
+    <link rel="stylesheet" href="../css/createuser.css">
+    <link rel="stylesheet" href="../css/General.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <!--TITULO-->
+                <div class="container-logo">
+                    <h1 class="logo">
+                        <a href="RegistroV.html">GIGANTOGRAFIA "EL ANGEL"</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Barra de pagina-->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="RegistroV.html">Registro de venta</a></li>
+                    <li><a href="CotejoA.html">Lista de Cotejo</a></li>
+                    <li><a href="CrearUser.html">Agregar Usuario</a></li>
+                    <li><a href="gestion.html">Gestionar Usuario</a></li>
+                    <li><a href="CrearUser.html">Historial de Venta</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="espacio"></div>
+    </header>
+    <div class="container-user">
+        <main>
+        <h2>CREAR USUARIO</h2>
+        <form id="crearUsuarioForm">
+            <label for="dni">NUMERO DE DNI:</label>
+            <input type="text" id="dni" name="dni">
+
+            <label for="usuario">USUARIO:</label>
+            <input type="text" id="usuario" name="usuario">
+
+            <label for="nombreApellido">NOMBRE Y APELLIDO:</label>
+            <input type="text" id="nombreApellido" name="nombreApellido">
+
+            <label for="contrasena">CONTRASEÑA:</label>
+            <input type="password" id="contrasena" name="contrasena">
+
+            <label for="celular">NUMERO DE CELULAR:</label>
+            <input type="text" id="celular" name="celular">
+
+            <label for="cargo">CARGO:</label>
+            <select id="cargo" name="cargo">
+                <option value="Empleado">Empleado</option>
+                <option value="Administrador">Administrador</option>
+            </select>
+
+            <button type="button" onclick="crearUsuario()">AGREGAR</button>
+        </form>
+    </main>
+    </div>
+    
+    <script src="../js/newpag.js"></script>
+</body>
+</html>
